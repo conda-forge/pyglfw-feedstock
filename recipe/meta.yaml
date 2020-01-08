@@ -1,6 +1,6 @@
 {% set name = "pyGLFW" %}
 {% set pypi_name = "glfw" %}
-{% set version = "1.9.0" %}
+{% set version = "1.9.1" %}
 
 package:
   name: {{ name|lower }}
@@ -8,9 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ pypi_name[0] }}/{{ pypi_name }}/{{ pypi_name }}-{{ version }}.tar.gz
-  sha256: 6d4418f53c0d3651ba392a45bc4413c59d761dc3be48144a46a6c6dc4adcec3f
-  patches:
-    - fix-lib-loading-win32.patch
+  sha256: c3203f1252038bc62aa0aa5cfbe99dd8539c8cb987c08f2f86aaf79ff0d214d8
 
 build:
   number: 0
