@@ -11,9 +11,6 @@ source:
   sha256: 6d4418f53c0d3651ba392a45bc4413c59d761dc3be48144a46a6c6dc4adcec3f
   patches:
     - fix-lib-loading-win32.patch
-    - add-debugging-output.patch
-    - more-debugging-info.patch
-    - fix-path.patch
 
 build:
   number: 0
