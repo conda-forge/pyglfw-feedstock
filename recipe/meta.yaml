@@ -12,6 +12,7 @@ source:
   patches:
     - fix-lib-loading-win32.patch
     - add-debugging-output.patch
+    - more-debugging-info.patch
 
 build:
   number: 0
