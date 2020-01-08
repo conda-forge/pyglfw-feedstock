@@ -1,0 +1,28 @@
+From 1ccdca48a961c3df4f1c916e245671c9a6c1f5af Mon Sep 17 00:00:00 2001
+From: =?UTF-8?q?Richard=20Ho=CC=88chenberger?=
+ <richard.hoechenberger@gmail.com>
+Date: Wed, 8 Jan 2020 18:57:07 +0100
+Subject: [PATCH 4/4] Fix path
+
+---
+ glfw/library.py | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+
+diff --git a/glfw/library.py b/glfw/library.py
+index 831e962..5a26e06 100644
+--- a/glfw/library.py
++++ b/glfw/library.py
+@@ -176,8 +176,8 @@ elif sys.platform == 'win32':
+     if glfw is None:
+         try:
+             print('trying conda default...')
+-            print(os.path.exists(os.path.join(sys.prefix, 'bin', 'glfw3.dll')))
+-            glfw = ctypes.CDLL(os.path.join(sys.prefix, 'bin', 'glfw3.dll'))
++            print(os.path.exists(os.path.join(sys.prefix,  'Library', 'bin', 'glfw3.dll')))
++            glfw = ctypes.CDLL(os.path.join(sys.prefix, 'Library', 'bin', 'glfw3.dll'))
+         except OSError:
+             pass
+     
+-- 
+2.21.0 (Apple Git-122)
+
