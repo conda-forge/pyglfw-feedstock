@@ -5,7 +5,7 @@ Home: https://github.com/FlorianRhiem/pyGLFW
 
 Package license: MIT
 
-Feedstock license: BSD 3-Clause
+Feedstock license: BSD-3-Clause
 
 Summary: This module provides Python bindings for GLFW
 
