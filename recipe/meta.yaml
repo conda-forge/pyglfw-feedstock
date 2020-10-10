@@ -11,7 +11,7 @@ source:
   sha256: 7a330b0abd4f5367510883f11e4f2b31c2d0dcc96cac9669107e1bd3426e98ce
 
 build:
-  number: 0
+  number: 1
   script: {{ PYTHON }} -m pip install . -vv
   # glfw is not / cannot be packaged for Python 2.7 on conda-forge for now, so
   # skip the build of pyGLFW on this platform.
