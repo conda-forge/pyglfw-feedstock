@@ -1,11 +1,11 @@
-About pyglfw
-============
+About pyglfw-feedstock
+======================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/pyglfw-feedstock/blob/main/LICENSE.txt)
 
 Home: https://github.com/FlorianRhiem/pyGLFW
 
 Package license: MIT
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/pyglfw-feedstock/blob/main/LICENSE.txt)
 
 Summary: This module provides Python bindings for GLFW
 

@@ -1,6 +1,6 @@
 {% set name = "pyGLFW" %}
 {% set pypi_name = "glfw" %}
-{% set version = "2.5.6" %}
+{% set version = "2.5.7" %}
 
 package:
   name: {{ name|lower }}
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ pypi_name[0] }}/{{ pypi_name }}/{{ pypi_name }}-{{ version }}.tar.gz
-  sha256: 9d1cd36ec2d5dc91f32358c8664e8d6b51f548314bc5d4782992cbd7a547c0c8
+  sha256: b094c66967f675a7b2c6eed85fe67906f62c6c62de66e2a3f7f2015010639e57
 
 build:
   number: 0
