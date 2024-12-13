@@ -7,11 +7,11 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ pypi_name[0] }}/{{ pypi_name }}/{{ pypi_name }}-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/{{ pypi_name[0] }}/{{ pypi_name }}/{{ pypi_name }}-{{ version }}.tar.gz
   sha256: 90e90d328b0b26fed6e1631d21801e2d8a7a0c5dcb480e733c177567ec9666f0
 
 build:
-  number: 0
+  number: 1
   script: {{ PYTHON }} -m pip install . -vv
   noarch: python
 
@@ -20,14 +20,16 @@ requirements:
     - python                                 # [build_platform != target_platform]
     - cross-python_{{ target_platform }}     # [build_platform != target_platform]
   host:
-    - python >=2.7
+    - python {{ python_min }}
     - pip
     - setuptools
   run:
-    - python >=2.7
+    - python >={{ python_min }}
     - glfw
 
 test:
+  requires:
+    - python {{ python_min }}
   imports:
     - glfw
 
